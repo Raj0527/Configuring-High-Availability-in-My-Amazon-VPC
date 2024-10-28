@@ -8,7 +8,7 @@ This Project demonstrates how to build reliable, fault-tolerant, and highly avai
   
 - **High Availability:** This concept emphasizes the system's ability to recover quickly from failures rather than merely preventing them. High availability is achieved by deploying resources across multiple Availability Zones and using services like Amazon RDS with Multi-AZ deployments.
 
-## Lab Environment
+## Project Environment
 The following AWS resources were provisioned through AWS CloudFormation, creating a baseline for the project:
 - **Amazon VPC:** A virtual private cloud to host resources securely.
 - **Public and Private Subnets:** Two subnets in different Availability Zones for high availability, with public subnets hosting load balancers and private subnets hosting application servers.
