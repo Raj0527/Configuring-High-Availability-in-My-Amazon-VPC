@@ -1,8 +1,7 @@
-# Configuring-High-Availability-in-My-Amazon-VPC
-# AWS High Availability Lab
+# AWS High Availability Project
 
 ## Overview
-This lab demonstrates how to build reliable, fault-tolerant, and highly available systems in the cloud using Amazon Web Services (AWS). The focus is on integrating **Elastic Load Balancing** and **Auto Scaling groups** with Amazon EC2 instances and Amazon RDS. Understanding these concepts is crucial for AWS Solutions Architects to ensure systems can withstand failures while maintaining performance.
+This Project demonstrates how to build reliable, fault-tolerant, and highly available systems in the cloud using Amazon Web Services (AWS). The focus is on integrating **Elastic Load Balancing** and **Auto Scaling groups** with Amazon EC2 instances and Amazon RDS. Understanding these concepts is crucial for AWS Solutions Architects to ensure systems can withstand failures while maintaining performance.
 
 ### Key Concepts
 - **Fault Tolerance:** This refers to a system's ability to remain operational even when some components fail. In AWS, services like Auto Scaling and Elastic Load Balancers contribute to fault tolerance by automatically adjusting resources and distributing traffic.
@@ -10,7 +9,7 @@ This lab demonstrates how to build reliable, fault-tolerant, and highly availabl
 - **High Availability:** This concept emphasizes the system's ability to recover quickly from failures rather than merely preventing them. High availability is achieved by deploying resources across multiple Availability Zones and using services like Amazon RDS with Multi-AZ deployments.
 
 ## Lab Environment
-The following AWS resources were provisioned through AWS CloudFormation, creating a baseline for the lab:
+The following AWS resources were provisioned through AWS CloudFormation, creating a baseline for the project:
 - **Amazon VPC:** A virtual private cloud to host resources securely.
 - **Public and Private Subnets:** Two subnets in different Availability Zones for high availability, with public subnets hosting load balancers and private subnets hosting application servers.
 - **Internet Gateway:** Allows resources in the public subnets to communicate with the internet.
@@ -32,7 +31,7 @@ In this initial task, I reviewed the configuration of the existing AWS resources
    - **Launch template name:** Entered `LaunchTemplate-<NUMBER>`.
    - **Template version description:** Provided a brief description, e.g., `Initial version`.
 4. **Amazon Machine Image (AMI) Selection:** Chose the **Quick Start** tab and selected **Amazon Linux 2023 AMI**.
-5. **Instance Type:** Selected **t3.micro** for cost-effective computing.
+5. **Instance Type:** Selected **t2.micro** for cost-effective computing.
 6. **Network Settings:** 
    - **Security groups:** Assigned `Inventory-App` to ensure proper access controls.
    - **IAM instance profile:** Assigned `Inventory-App-Role` for the required permissions.
@@ -81,13 +80,4 @@ In this initial task, I reviewed the configuration of the existing AWS resources
 3. **Monitor Failover Process:** Observed events in the **Events** section, noting the transition of roles from the primary to the read replica.
 
 ## Conclusion
-Congratulations! You have successfully verified that your application is both highly available and fault-tolerant. By integrating Auto Scaling, Elastic Load Balancing, and AWS RDS with Multi-AZ capabilities, you have built a robust architecture suitable for production environments.
-
-## Additional Notes
-- **Cost Management:** Regularly monitor AWS costs associated with running services, especially when scaling up resources.
-- **Security Best Practices:** Implement security measures such as IAM roles, security groups, and VPC configurations to safeguard your environment.
-- **Further Learning:** Explore additional AWS services such as CloudFormation for infrastructure as code, and CloudWatch for advanced monitoring solutions.
-
-## References
-- [AWS Documentation](https://aws.amazon.com/documentation/)
-- [AWS Best Practices for Architecting](https://aws.amazon.com/architecture/)
+I have successfully verified that my application is both highly available and fault-tolerant. By integrating Auto Scaling, Elastic Load Balancing, and AWS RDS with Multi-AZ capabilities, I have built a robust architecture suitable for production environments.
