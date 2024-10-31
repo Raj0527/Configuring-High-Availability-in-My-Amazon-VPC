@@ -18,6 +18,9 @@ The following AWS resources were provisioned through AWS CloudFormation, creatin
 - **EC2 Instance:** An application server running a basic inventory tracking application in a private subnet.
 - **Aurora DB Cluster:** A highly available relational database with a single DB instance in a private subnet, storing inventory data.
 
+## Project Architecture
+![image_123650291 (1)](https://github.com/user-attachments/assets/196118bb-08bf-4aa2-8189-adce85719dca)
+
 ## Tasks
 
 ### Task 1: Inspect Existing Lab Environment
